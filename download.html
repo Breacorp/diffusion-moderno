@@ -107,7 +107,19 @@
   <header class="header">
     <div class="container nav-container">
       <a href="/" class="brand-logo">
-        <img src="/icon.png" alt="Moderno Tech Logo" class="brand-icon">
+        <div class="brand-icon-svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="url(#nav-dl-grad)" />
+            <path d="M2 17L12 22L22 17" stroke="url(#nav-dl-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M2 12L12 17L22 12" stroke="url(#nav-dl-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="nav-dl-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2563eb" />
+                <stop offset="100%" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <div class="brand-text">
           <span class="brand-title">Moderno</span>
           <span class="brand-badge">Diffusion</span>

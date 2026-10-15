@@ -506,20 +506,124 @@ body {
 .feature-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 32px 24px;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .feature-card:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(37, 99, 235, 0.3);
+  border-color: rgba(56, 189, 248, 0.3);
   transform: translateY(-4px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.feature-icon {
-  font-size: 32px;
-  margin-bottom: 16px;
+/* Glassmorphism Icon Container - Inspired by MODERNO_AI_CLEANER_PRO */
+.icon-glass {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35), 0 4px 14px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Apple Specular Reflection Highlight (Top 45%) */
+.icon-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.icon-glass svg {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  z-index: 1;
+}
+
+.feature-card:hover .icon-glass {
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* Dual-Tone Glow Profiles from Moderno Pro System */
+.glow-cyan {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.28) 0%, rgba(37, 99, 235, 0.14) 100%);
+  border-color: rgba(6, 182, 212, 0.38);
+  color: #00e5ff;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(6, 182, 212, 0.3);
+}
+.glow-cyan svg { stroke: #00e5ff; }
+
+.glow-blue {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.28) 0%, rgba(14, 165, 233, 0.14) 100%);
+  border-color: rgba(59, 130, 246, 0.38);
+  color: #38bdf8;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(59, 130, 246, 0.3);
+}
+.glow-blue svg { stroke: #38bdf8; }
+
+.glow-purple {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.28) 0%, rgba(99, 102, 241, 0.14) 100%);
+  border-color: rgba(139, 92, 246, 0.38);
+  color: #c084fc;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(139, 92, 246, 0.3);
+}
+.glow-purple svg { stroke: #c084fc; }
+
+.glow-emerald {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.28) 0%, rgba(20, 184, 166, 0.14) 100%);
+  border-color: rgba(16, 185, 129, 0.38);
+  color: #10b981;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(16, 185, 129, 0.3);
+}
+.glow-emerald svg { stroke: #10b981; }
+
+.glow-amber {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.28) 0%, rgba(234, 88, 12, 0.14) 100%);
+  border-color: rgba(245, 158, 11, 0.38);
+  color: #f59e0b;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+.glow-amber svg { stroke: #f59e0b; }
+
+.glow-rose {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.28) 0%, rgba(168, 85, 247, 0.14) 100%);
+  border-color: rgba(236, 72, 153, 0.38);
+  color: #f43f5e;
+  box-shadow: inset 0 1px 1.2px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(236, 72, 153, 0.3);
+}
+.glow-rose svg { stroke: #f43f5e; }
+
+.brand-icon-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(6, 182, 212, 0.2));
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.35);
 }
 
 .feature-title {
