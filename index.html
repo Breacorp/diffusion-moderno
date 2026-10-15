@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moderno Diffusion — Generación Local de Inteligencia Artificial para Mac y Windows</title>
+  <meta name="description" content="Moderno Diffusion es la suite de escritorio de Moderno Tech para generar imágenes y arte con IA 100% en tu computadora, sin nube y con privacidad total.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid -->
+  <div class="bg-gradient-mesh"></div>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">
+        <img src="/icon.png" alt="Moderno Tech Logo" class="brand-icon">
+        <div class="brand-text">
+          <span class="brand-title">Moderno</span>
+          <span class="brand-badge">Diffusion</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Funciones</a>
+        <a href="#canvas">Canvas Creativo</a>
+        <a href="#offline">Privacidad</a>
+        <a href="#faq">Preguntas</a>
+        <a href="https://studio.moderno.com.ar" target="_blank" class="nav-studio-link">Moderno Studio Cloud ↗</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm">Descargar App</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-tag">
+        <span class="pulse-dot"></span>
+        <span>Suite Nativa Local de Moderno Tech</span>
+      </div>
+      <h1 class="hero-title">
+        La Suite Definitiva de <br>
+        <span class="gradient-text">Herramientas de IA Creativa</span>
+      </h1>
+      <p class="hero-subtitle">
+        <strong>Moderno Diffusion</strong> es la caja de herramientas más rápida y sencilla para ejecutar modelos de inteligencia artificial generativa <strong>100% en tu computadora</strong>. Sin límites de créditos, sin suscripciones forzadas y con total privacidad.
+      </p>
+
+      <!-- Download CTA Buttons -->
+      <div id="download" class="download-cta-group">
+        <a href="https://github.com/Breacorp/Moderno-Diffusion/releases/latest/download/ModernoDiffusion-macOS.dmg" class="btn btn-download btn-mac">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.64 1.35-.57.65-1.07 1.71-.93 2.73 1 .08 2.03-.48 2.65-1.23z"/>
+          </svg>
+          <div class="btn-text">
+            <span class="btn-caption">Descargar para</span>
+            <span class="btn-os">macOS (Apple Silicon & Intel)</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/Breacorp/Moderno-Diffusion/releases/latest/download/ModernoDiffusion-Setup.exe" class="btn btn-download btn-win">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.401H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.95-1.801"/>
+          </svg>
+          <div class="btn-text">
+            <span class="btn-caption">Descargar para</span>
+            <span class="btn-os">Windows (64-bit .exe)</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">✓ Instalador en 1 clic</div>
+        <div class="highlight-item">✓ 100% Offline y Privado</div>
+        <div class="highlight-item">✓ Optimizado para chips M1/M2/M3/M4 & RTX</div>
+      </div>
+
+      <!-- App Interface Preview Card -->
+      <div class="app-preview-card">
+        <div class="window-header">
+          <div class="traffic-lights">
+            <span class="light red"></span>
+            <span class="light yellow"></span>
+            <span class="light green"></span>
+          </div>
+          <div class="window-title">Moderno Diffusion — Local AI Workspace</div>
+          <div class="window-badges">
+            <span class="badge-tag">GPU Acelerada</span>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="preview-mockup">
+            <div class="mockup-sidebar">
+              <div class="sidebar-item active">🎨 Text to Image</div>
+              <div class="sidebar-item">🖼 Image to Image</div>
+              <div class="sidebar-item">🖌 Inpainting & Canvas</div>
+              <div class="sidebar-item">🎯 ControlNet</div>
+              <div class="sidebar-item">⚡ Upscaler HD</div>
+              <div class="sidebar-item">🧠 Entrenar Modelos</div>
+            </div>
+            <div class="mockup-canvas">
+              <div class="mockup-prompt-bar">
+                <span class="prompt-text">"Cinematic shot of futuristic architecture at dusk, volumetric fog, ultra detailed 8k octane render"</span>
+                <span class="prompt-action">Generar (Local)</span>
+              </div>
+              <div class="mockup-result-area">
+                <div class="art-card art-1"></div>
+                <div class="art-card art-2"></div>
+                <div class="art-card art-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Potencia de Inferencia</span>
+        <h2 class="section-title">Herramientas de IA de última generación en tu equipo</h2>
+        <p class="section-desc">Moderno Diffusion reúne todos los algoritmos creativos avanzados en una aplicación limpia, intuitiva y fácil de usar.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Text to Image</h3>
+          <p class="feature-text">Generá imágenes hiperrealistas, ilustraciones, conceptos y visuales increíbles simplemente describiéndolos en lenguaje natural.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🖌️</div>
+          <h3 class="feature-title">Inpainting & Generative Fill</h3>
+          <p class="feature-text">Pintá con el pincel sobre cualquier área de tu imagen para agregar, eliminar o sustituir objetos preservando la iluminación y el contexto.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3 class="feature-title">Animaciones & Video Tools</h3>
+          <p class="feature-text">Herramientas dedicadas para crear transiciones fluidas, interpolación de cuadros y secuencias animadas generadas por IA.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">Image to Image</h3>
+          <p class="feature-text">Transformá bocetos hechos a mano o fotos existentes en conceptos terminados guiándote por prompts de texto.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3 class="feature-title">Super Escalador (Upscaler)</h3>
+          <p class="feature-text">Aumentá la resolución de tus imágenes generadas con nitidez cristalina y reconstrucción de detalles mediante IA.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">ControlNet & Pose</h3>
+          <p class="feature-text">Controlá con precisión matemática la pose de personajes, líneas arquitectónicas y profundidad espacial con modelos de control.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3 class="feature-title">Modelos Personalizados & LoRA</h3>
+          <p class="feature-text">Importá tus propios checkpoints (.safetensors, .ckpt, .tdict) para aplicar estilos personalizados sin restricciones.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3 class="feature-title">Entrenamiento de Modelos</h3>
+          <p class="feature-text">Entrená modelos y LoRAs con tus propias fotos o estilo de marca directamente en tu máquina de forma desatendida.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌀</div>
+          <h3 class="feature-title">Generador de Ilusiones</h3>
+          <p class="feature-text">Fusioná patrones geométricos, logos o espirales ocultas dentro de imágenes fotorrealistas con algoritmos de control visual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Canvas Deep Dive -->
+  <section id="canvas" class="canvas-section">
+    <div class="container canvas-container">
+      <div class="canvas-content">
+        <span class="section-eyebrow">Experiencia Creativa</span>
+        <h2 class="section-title">Liberá tu imaginación con el Canvas de IA</h2>
+        <p class="canvas-desc">
+          Moderno Diffusion potencia tu flujo creativo proporcionando un canvas interactivo donde el dibujo humano y la generación artificial se mezclan sin fricción. Generá, retocá, expandí bordes (outpainting) y editá tus creaciones en tiempo real.
+        </p>
+        <ul class="canvas-bullets">
+          <li><strong>Outpainting Infinito:</strong> Expandí los límites de una imagen en cualquier dirección.</li>
+          <li><strong>Capas y Máscaras Dinámicas:</strong> Control total de opacidad y áreas de influencia.</li>
+          <li><strong>Atajos de Teclado Profesionales:</strong> Diseñado para creadores de contenido, artistas y diseñadores.</li>
+        </ul>
+      </div>
+      <div class="canvas-visual">
+        <div class="canvas-mockup-frame">
+          <div class="canvas-mockup-tag">Canvas Multimodal</div>
+          <div class="canvas-mockup-art"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offline & Privacy Section -->
+  <section id="offline" class="privacy-section">
+    <div class="container text-center">
+      <div class="privacy-card">
+        <div class="privacy-icon">🛡️</div>
+        <h2 class="section-title text-white">100% Offline. Dueño absoluto de tu IA.</h2>
+        <p class="privacy-desc">
+          A diferencia de los servicios en la nube que cobran por crédito y pueden almacenar tus prompts e imágenes, <strong>Moderno Diffusion corre íntegramente en el silicio de tu computadora</strong>. Tus archivos, modelos e imágenes nunca abandonan tu disco local.
+        </p>
+        <div class="privacy-specs-grid">
+          <div class="spec-box">
+            <div class="spec-val">0</div>
+            <div class="spec-label">Datos enviados a servidores</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-val">∞</div>
+            <div class="spec-label">Imágenes que podés generar</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-val">$0</div>
+            <div class="spec-label">Costo por generación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Dudas Habituales</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">¿Dónde se procesan y generan las imágenes?</div>
+          <div class="faq-answer">Se procesan 100% de manera local en el procesador (CPU/GPU/Neural Engine) de tu propia computadora. Absolutamente nada se sube a internet.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Qué requisitos de hardware se recomiendan?</div>
+          <div class="faq-answer">En Mac se recomienda cualquier chip Apple Silicon (M1, M2, M3 o M4 con 8GB o más de memoria unificada). En Windows se recomienda procesador multinúcleo con tarjeta gráfica dedicada (NVIDIA GeForce RTX serie 2000, 3000 o 4000).</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Puedo usar comercialmente las imágenes que genero?</div>
+          <div class="faq-answer">Sí. Las imágenes generadas en tu máquina son tuyas conforme a los términos de la licencia CreativeML Open RAIL-M de los modelos base.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿En qué se diferencia de Moderno Studio Cloud?</div>
+          <div class="faq-answer"><strong>Moderno Studio</strong> (en studio.moderno.com.ar) es nuestra plataforma web para generación cinematográfica, video multi-modelo de alta potencia y colaboración remota en la nube. <strong>Moderno Diffusion</strong> es la herramienta de escritorio para creadores que desean generar imágenes de forma local sin consumir créditos cloud.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <img src="/icon.png" alt="Moderno Tech Logo" class="brand-icon">
+          <span class="brand-title">Moderno Diffusion</span>
+        </div>
+        <p class="footer-desc">Parte del ecosistema tecnológico Moderno Tech. Inteligencia artificial, software empresarial y herramientas creativas diseñadas para el mundo real.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <h4 class="footer-heading">Ecosistema</h4>
+          <a href="https://moderno.com.ar" target="_blank">Moderno Tech</a>
+          <a href="https://studio.moderno.com.ar" target="_blank">Moderno Studio</a>
+          <a href="https://ai.moderno.com.ar" target="_blank">Moderno AI</a>
+          <a href="https://cloud.moderno.com.ar" target="_blank">Moderno Cloud</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Soporte</h4>
+          <a href="https://moderno.com.ar/ayuda" target="_blank">Centro de Ayuda</a>
+          <a href="mailto:contacto@moderno.com.ar">contacto@moderno.com.ar</a>
+          <a href="https://github.com/Breacorp/Moderno-Diffusion" target="_blank">Repositorio GitHub</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal</h4>
+          <a href="https://github.com/Breacorp/Moderno-Diffusion/blob/main/LICENSE" target="_blank">Licencia AGPL v3</a>
+          <a href="https://github.com/CompVis/stable-diffusion/blob/main/LICENSE" target="_blank">Licencia de Modelos OpenRAIL</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© 2026 Moderno Tech — Todos los derechos reservados. Diseñado para diffusion.moderno.com.ar</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
